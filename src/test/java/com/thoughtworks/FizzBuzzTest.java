@@ -89,4 +89,29 @@ public class FizzBuzzTest {
         assert result.equals("Fizz");
     }
 
+    @Test
+    public void should_return_fizz_when_given_30(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(30);
+
+        //then
+        assert result.equals("Fizz");
+    }
+
+    @Test
+    public void should_return_fizz_when_given_35(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(35);
+
+        //then
+        assert result.equals("Fizz");
+    }
+
+
 }
