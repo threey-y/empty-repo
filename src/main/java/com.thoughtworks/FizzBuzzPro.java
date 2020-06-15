@@ -11,8 +11,12 @@ public class FizzBuzzPro {
             return "BuzzWhizz";
         if ((number % 3 == 0)&&(number % 7 == 0))
             return "FizzWhizz";
-        if ((number % 3 == 0)&&(number % 5 == 0))
-            return "FizzBuzz";
+        if ((number % 3 == 0)&&(number % 5 == 0)){
+            isDividedBy3(number);
+            isDividedBy5(number);
+            return result;
+        }
+
         if (number % 3 == 0)
             return isDividedBy3(number);
         if (number % 5 == 0)
