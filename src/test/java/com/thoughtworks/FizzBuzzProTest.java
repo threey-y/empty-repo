@@ -40,4 +40,16 @@ public class FizzBuzzProTest {
         assert result.equals("Buzz");
     }
 
+    @Test
+    public void should_return_whizz_when_given_7(){
+        //given
+        FizzBuzzPro fizzBuzzPro = new FizzBuzzPro();
+
+        //when
+        String result = fizzBuzzPro.printnum(7);
+
+        //then
+        assert result.equals("Whizz");
+    }
+
 }
