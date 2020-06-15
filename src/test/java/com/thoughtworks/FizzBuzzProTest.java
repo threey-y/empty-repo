@@ -112,4 +112,28 @@ public class FizzBuzzProTest {
         //then
         assert result.equals("Fizz");
     }
+
+    @Test
+    public void should_return_fizz_when_given_30(){
+        //given
+        FizzBuzzPro fizzBuzzPro = new FizzBuzzPro();
+
+        //when
+        String result = fizzBuzzPro.printnum(30);
+
+        //then
+        assert result.equals("Fizz");
+    }
+
+    @Test
+    public void should_return_buzzwhizz_when_given_35(){
+        //given
+        FizzBuzzPro fizzBuzzPro = new FizzBuzzPro();
+
+        //when
+        String result = fizzBuzzPro.printnum(35);
+
+        //then
+        assert result.equals("BuzzWhizz");
+    }
 }
