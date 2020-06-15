@@ -29,6 +29,20 @@ public class FizzBuzzPro {
         return result;
     }
 
+    private String isDividedBy5(int number){
+        if (number % 5 == 0){
+            result += "Buzz";
+        }
+        return result;
+    }
+
+    private String isDividedBy7(int number){
+        if (number % 7 == 0){
+            result += "Whizz";
+        }
+        return result;
+    }
+
     private Boolean isContain3(int number) {
         String temp = String.valueOf(number);
         if (temp.contains("3")) {
@@ -36,4 +50,5 @@ public class FizzBuzzPro {
         }
         return false;
     }
+
 }
