@@ -5,24 +5,29 @@ public class FizzBuzzPro {
     public String printnum(int number){
         if (isContain3(number))
             return "Fizz";
-        if ((number % 3 == 0)&&(number % 5 == 0)&&(number % 7 == 0))
-            return "FizzBuzzWhizz";
-        if ((number % 5 == 0)&&(number % 7 == 0))
-            return "BuzzWhizz";
-        if ((number % 3 == 0)&&(number % 7 == 0))
-            return "FizzWhizz";
-        if ((number % 3 == 0)&&(number % 5 == 0)){
+        if ((number % 3 == 0)||(number % 5 == 0)||(number % 7 == 0)){
             isDividedBy3(number);
             isDividedBy5(number);
+            isDividedBy7(number);
             return result;
         }
-
-        if (number % 3 == 0)
-            return isDividedBy3(number);
-        if (number % 5 == 0)
-            return isDividedBy5(number);
-        if (number % 7 == 0)
-            return isDividedBy7(number);
+//            return "FizzBuzzWhizz";
+//        if ((number % 5 == 0)&&(number % 7 == 0))
+//            return "BuzzWhizz";
+//        if ((number % 3 == 0)&&(number % 7 == 0))
+//            return "FizzWhizz";
+//        if ((number % 3 == 0)&&(number % 5 == 0)){
+//            isDividedBy3(number);
+//            isDividedBy5(number);
+//            return result;
+//        }
+//
+//        if (number % 3 == 0)
+//            return isDividedBy3(number);
+//        if (number % 5 == 0)
+//            return isDividedBy5(number);
+//        if (number % 7 == 0)
+//            return isDividedBy7(number);
         return String.valueOf(number);
     }
 
