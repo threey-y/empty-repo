@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 public class FizzBuzzPro {
-    public String result;
+    public String result="";
     public String printnum(int number){
         if (isContain3(number))
             return "Fizz";
@@ -16,9 +16,9 @@ public class FizzBuzzPro {
         if (number % 3 == 0)
             return isDividedBy3(number);
         if (number % 5 == 0)
-            return "Buzz";
+            return isDividedBy5(number);
         if (number % 7 == 0)
-            return "Whizz";
+            return isDividedBy7(number);
         return String.valueOf(number);
     }
 
