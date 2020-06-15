@@ -2,6 +2,8 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int num){
+        if (isContain3(num))
+            return "Fizz";
         if ((num % 3 == 0)&&(num % 5 == 0)&&(num % 7 == 0))
             return "FizzBuzzWhizz";
         if ((num % 3 == 0)&&(num % 5 == 0))
@@ -16,4 +18,11 @@ public class FizzBuzz {
     }
 
 
+    private Boolean isContain3(int number) {
+        String temp = String.valueOf(number);
+        if (temp.contains("3")){
+            return true;
+        }
+        return false;
+    }
 }
