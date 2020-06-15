@@ -3,6 +3,9 @@ package com.thoughtworks;
 public class FizzBuzzPro {
     public String result="";
     public String printnum(int number){
+        if (isContain7(number)){
+            return "Fizz";
+        }
         if (isContain5(number)){
             isDividedBy5(number);
             isDividedBy7(number);
@@ -70,6 +73,14 @@ public class FizzBuzzPro {
     private Boolean isContain5(int number) {
         String temp = String.valueOf(number);
         if (temp.contains("5")) {
+            return true;
+        }
+        return false;
+    }
+
+    private Boolean isContain7(int number) {
+        String temp = String.valueOf(number);
+        if (temp.contains("7")) {
             return true;
         }
         return false;
