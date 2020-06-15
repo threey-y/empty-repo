@@ -15,4 +15,17 @@ public class FizzBuzzProTest {
         //then
         assert result.equals("1");
     }
+
+    @Test
+    public void should_return_fizz_when_given_3(){
+        //given
+        FizzBuzzPro fizzBuzzPro = new FizzBuzzPro();
+
+        //when
+        String result = fizzBuzzPro.printnum(3);
+
+        //then
+        assert result.equals("Fizz");
+    }
+
 }
