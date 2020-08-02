@@ -16,4 +16,18 @@ public class CalculatorTest {
         //then
         Assert.assertEquals(actual, saleNumber);
     }
+
+    @Test
+    public void should_return_100_when_goods_is_apple() {
+        //given
+        Goods goods = new Goods(10,"apple");
+        Calculator calculator = new Calculator();
+        int saleNumber = 100;
+
+        //when
+        int actual = calculator.calculate(goods);
+
+        //then
+        Assert.assertEquals(actual, saleNumber);
+    }
 }
